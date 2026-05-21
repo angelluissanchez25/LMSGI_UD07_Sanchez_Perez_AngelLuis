@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2"
+         xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+         xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#completable#urn:fdc:peppol.eu:poacc:trns:invoice:3</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:invoice:3</cbc:ProfileID>
+    
+    <cbc:ID>INV-2026-05-0012</cbc:ID>
+    <cbc:IssueDate>2026-05-21</cbc:IssueDate>
+    <cbc:DueDate>2026-06-20</cbc:DueDate>
+    <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode> <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyName>
+                <cbc:Name>WillmanTech S.L.</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Calle Tecnología, Parque Empresarial Torneo</cbc:StreetName>
+                <cbc:CityName>Sevilla</cbc:CityName>
+                <cbc:PostalZone>41015</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>ES</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>ESB41XXXXXX</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyName>
+                <cbc:Name>Andalucía Innovación Tecnológica S.A.</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Av. de la Innovación, Edif. Central, Pl. 2</cbc:StreetName>
+                <cbc:CityName>Sevilla</cbc:CityName>
+                <cbc:PostalZone>41020</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>ES</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>ESA41YYYYYY</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:Contact>
+                <cbc:ElectronicMail>compras@andaluciainnovacion.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="EUR">1190.70</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">5670.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">1190.70</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>S</cbc:ID> <cbc:Percent>21.00</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">5670.00</cbc:LineExtensionAmount> <cbc:TaxExclusiveAmount currencyID="EUR">5670.00</cbc:TaxExclusiveAmount> <cbc:TaxInclusiveAmount currencyID="EUR">6860.70</cbc:TaxInclusiveAmount> <cbc:PayableAmount currencyID="EUR">6860.70</cbc:PayableAmount>      </cac:LegalMonetaryTotal>
+    
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="HUR">1</cbc:InvoicedQuantity> <cbc:LineExtensionAmount currencyID="EUR">4500.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Consultoría y despliegue de infraestructura ERP/CRM dockerizado</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>S</cbc:ID>
+                <cbc:Percent>21.00</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">4500.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>

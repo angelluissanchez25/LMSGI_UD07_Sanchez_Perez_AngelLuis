@@ -1,0 +1,68 @@
+[
+  {
+    "invoice_id": 4589,
+    "invoice_number": "INV/2026/05/0012",
+    "state": "posted",
+    "date_invoice": "2026-05-21",
+    "date_due": "2026-06-20",
+    "currency": "EUR",
+    "company": {
+      "company_id": 1,
+      "name": "WillmanTech S.L.",
+      "vat": "ESB41XXXXXX"
+    },
+    "client": {
+      "partner_id": 1024,
+      "name": "Andalucía Innovación Tecnológica S.A.",
+      "vat": "A41YYYYYY",
+      "email": "compras@andaluciainnovacion.com",
+      "phone": "+34954000000",
+      "address": {
+        "street": "Av. de la Innovación, Edif. Central, Pl. 2",
+        "city": "Sevilla",
+        "zip": "41020",
+        "country_code": "ES"
+      }
+    },
+    "invoice_lines": [
+      {
+        "line_id": 12401,
+        "product_id": 512,
+        "name": "Consultoría y despliegue de infraestructura ERP/CRM dockerizado",
+        "quantity": 1.00,
+        "price_unit": 4500.00,
+        "discount_percentage": 0.00,
+        "tax_ids": [
+          {
+            "tax_id": 3,
+            "name": "IVA 21% Prestación de Servicios",
+            "amount_percentage": 21.00
+          }
+        ],
+        "price_subtotal": 4500.00
+      },
+      {
+        "line_id": 12402,
+        "product_id": 304,
+        "name": "Soporte Técnico Avanzado - Bolsa 10 Horas",
+        "quantity": 2.00,
+        "price_unit": 650.00,
+        "discount_percentage": 10.00,
+        "tax_ids": [
+          {
+            "tax_id": 3,
+            "name": "IVA 21% Prestación de Servicios",
+            "amount_percentage": 21.00
+          }
+        ],
+        "price_subtotal": 1170.00
+      }
+    ],
+    "financial_totals": {
+      "amount_untaxed": 5670.00,
+      "amount_tax": 1190.70,
+      "amount_total": 6860.70
+    },
+    "payment_terms": "Pago a 30 días mediante transferencia bancaria"
+  }
+]
